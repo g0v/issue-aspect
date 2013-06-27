@@ -1,0 +1,36 @@
+extends ./layout/layout
+
+block content
+  div#main(class="pure-menu pure-menu-open pure-menu-horizontal").pure-g-r 
+    ul.pure-u-1
+      li.pure-u-1-4
+        a(href="./index.html")
+          | 首頁
+      li.pure-u-1-4
+        a(href="./pros.html")
+          | 正方
+      li.pure-u-1-4
+        a(href="./cons.html")
+          | 反方
+      li.pure-u-1-4
+        a(href="./discuss.html").pure-menu-selected
+          | 討論區
+
+  div#main-container
+
+    div#disqus_thread
+    script(type='text/javascript')
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'twservicecontract'; // required: replace example with your forum shortname
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    noscript
+      | Please enable JavaScript to view the
+    a(href='http://disqus.com/?ref_noscript') comments powered by Disqus.
+    a.dsq-brlink(href='http://disqus.com')
+      | comments powered by
+      span.logo-disqus Disqus
