@@ -1,0 +1,16 @@
+#header {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  border-bottom: 1px solid #EEE;
+}
+#header .slogan {
+  color: #CCC;
+}
+#main {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
