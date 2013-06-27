@@ -3,11 +3,8 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    chilijung
 
-# THANKS
-
-    <name>
 
 # TECHNOLOGY COLOPHON
 
