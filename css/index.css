@@ -5,6 +5,9 @@
   text-align: center;
   border-bottom: 1px solid #EEE;
 }
+#header .topic {
+  font-size: 50px;
+}
 #header .slogan {
   color: #CCC;
 }
@@ -13,4 +16,12 @@
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+}
+#footer {
+  width: 90%;
+  font-size: 13px;
+  text-align: right;
+  padding-top: 20px;
+  border-top: 1px solid #EEE;
+  color: #CCC;
 }
