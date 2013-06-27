@@ -39,4 +39,26 @@
 
 - 用像 youtube 那樣的 bar 來很直觀的看到支持反對的比例。
 
+## Developer 
 
+Using grunt!
+
+	$ npm install -g grunt-cli
+
+安裝 npm 
+
+	$ npm install
+
+watch `jade` 和 `less`
+
+	$ grunt watch
+
+這樣就可以 watch ， jade 和 less。當他們有更動就會去自己 compile
+
+建議用個 web server 來看本網站。如果用 jekyll 的話
+
+可以在 root file 裡面打。
+
+	$ jekyll serve --watch
+
+應該就會看起來正常。
