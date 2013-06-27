@@ -21,12 +21,15 @@ module.exports = function(grunt) {
 
     less: {
       development: {
-        options: {
-          paths: ["less/"]
-        },
-        files: {
-          "deploy/deploy.css": "deploy/deploy.less"
-        }
+        files: [
+           {
+              expand: true,     // Enable dynamic expansion.
+              cwd: 'src/less',      // Src matches are relative to this path.
+              src: ['*.less'], // Actual pattern(s) to match.
+              dest: './css',   // Destination path prefix.
+              ext: '.css'   // Dest filepaths will have this extension.
+           }
+        ]
       }
     },
 
@@ -92,8 +95,13 @@ module.exports = function(grunt) {
     watch: {
 
       less: {
-        files: 'less/*.less',
-        tasks: ['concat', 'less', 'cssmin', 'clean']
+        files: 'src/less/*.less',
+        tasks: ['less:development']
+      },
+
+      jade: {
+        files: 'src/jade/*.jade',
+        tasks: ['jade']
       }
     }
 
